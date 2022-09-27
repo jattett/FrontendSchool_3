@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -94,8 +94,8 @@
             /* layout */
             /* design */
             *,
-            *:after,
-            *:before {
+            *::after,
+            *::before {
                 box-sizing: border-box;
             }
 
@@ -315,7 +315,7 @@
                 animation: 입 0.3s infinite alternate;
             }
 
-            .licat .mouth.right:before {
+            .licat .mouth.right::before {
                 content: "";
                 position: absolute;
                 top: -23px;
@@ -323,15 +323,8 @@
                 width: 180px;
                 height: 50px;
                 background: var(--sec);
+                /* background-color: red; */
                 z-index: 3;
-            }
-
-            .licat .mouth.left:before {
-                left: 29px;
-            }
-
-            .licat .mouth.right:before {
-                right: 31px;
             }
 
             .licat .face .hair-back {
