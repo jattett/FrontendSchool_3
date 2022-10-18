@@ -60,6 +60,12 @@
             function render() {
                 const display = document.getElementById("display");
                 display.innerHTML = "";
+
+                // // 최신 게시물이 위로 올라오도록
+                // for (let i = allMemo.length; i > 0 ; i--) {
+                //     // 아래와 유사 코드
+                // }
+
                 for (const item of allMemo) {
                     const saveTitle = document.createElement("h2");
                     const saveContent = document.createElement("p");
@@ -68,7 +74,7 @@
 
                     saveTitle.textContent = item.title;
                     saveContent.textContent = item.content;
-                    saveId.textContent = item.len;
+                    saveId.textContent = item.len + 1;
                     deleteMemoBtn.textContent = "삭제";
                     deleteMemoBtn.setAttribute("id", item.len);
                     deleteMemoBtn.setAttribute("onclick", "remove()");
