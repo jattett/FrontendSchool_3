@@ -613,9 +613,9 @@ class LinkedList {
         this.length = 0;
     }
 
-    length() {
-        return this.length;
-    }
+    // length() { //this.length가 덮어 씀
+    //     return this.length;
+    // }
 
     append(data) {
         let 새로운노드 = new Node(data);
@@ -655,9 +655,9 @@ class LinkedList {
         this.displayData = "";
     }
 
-    length() {
-        return this.length;
-    }
+    // length() { //this.length가 덮어 씀
+    //     return this.length;
+    // }
 
     toString() {
         return "<" + this.displayData.slice(0, -2) + ">";
@@ -703,9 +703,9 @@ class LinkedList {
         this.displayDataArr = [];
     }
 
-    length() {
-        return this.length;
-    }
+    // length() { //this.length가 덮어 씀
+    //     return this.length;
+    // }
 
     toString() {
         return "<" + this.displayData.slice(0, -2) + ">";
@@ -754,9 +754,9 @@ class LinkedList {
         this.length = 0;
     }
 
-    length() {
-        return this.length;
-    }
+    // length() { //this.length가 덮어 씀
+    //     return this.length;
+    // }
 
     toString() {
         let 순회용현재노드 = this.head;
